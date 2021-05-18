@@ -46,6 +46,7 @@ namespace KillemAll
             foreach (Process process in processes)
             {
                 process.Kill();
+                System.Windows.Forms.MessageBox.Show("Process " + process.ProcessName + " terminated.");
             }
 
             return true;
